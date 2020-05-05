@@ -29,11 +29,11 @@ namespace tabuleiro
         public bool existeMovimentosPossiveis()
         {
             bool[,] mat = movimentosPossiveis();
-            for(int i = 0; i< tab.linhas; i++)
+            for(int i = 0;i < tab.linhas; i++)
             {
-                for(int j = 0; j<tab.colunas;j++)
+                for(int j = 0;j < tab.colunas; j++)
                 {
-                    if (mat[i,j] == true)
+                    if (mat[i, j])
                     {
                         return true;
                     }
